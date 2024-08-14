@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Page1.html">
+
+    <title>Transfer Money </title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+
+    <h1 class="display-4 text-center mt-5">ATM Machine</h1>
+    <h1 class="display-6 text-center mt-5">Transfer Money</h1>
+
+    <div class="row mt-5 mb-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold">Enter your account no.</label>
+            <input type="text" class="form-control" id="Pin" placeholder="* * * * * * * *">
+            <button type="button" class="btn btn-outline-light mt-3" onclick="myfunction()" value="go">Ok</button>
+            <p id="demo" class="mt-5"> </p>
+        </div>
+    </div>
+
+    <center>
+
+        <div id="display" style="display:block;">
+            <input type="text" id="amount1" value="" /> <br><br>
+            <button class="btn btn-outline-light" type="submit" value="submit" onclick="getamount()">Send</button>
+        </div>
+
+        <div>
+            <a class="btn btn-outline-light mt-4" href="ATM-2 .html">Back</a><br>
+        </div>
+
+    </center>
+
+    <script>
+
+        function myfunction() {
+
+            var p = document.getElementById('Pin').value;
+            var a = 1;
+
+            if (p == a) {
+                document.getElementById("demo").innerHTML = "Please Enter Your Amount";
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Invalid pin";
+            }
+        }
+
+        function getamount() {
+
+            m = 10000;
+            y = "name";
+
+            var a = document.getElementById('amount1').value;
+
+            if (a <= m && a % 100 == 0)
+                alert("Your send amount : " + a + "rs  to " + " xxx " + y)
+
+            else
+                alert("Invalid cash")
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

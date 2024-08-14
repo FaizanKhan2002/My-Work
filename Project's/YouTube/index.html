@@ -1,0 +1,714 @@
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="yt_logo.png" .avif" type="image/x-icon">
+        <!-- Material Icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- CSS File -->
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="index.css" />
+        <title>YouTube</title>
+</head>
+
+<body>
+        <header class="d-flex justify-content-between align-items-center">
+
+                <div class="logo left">
+                        <i id="menu" class="material-icons">menu</i>
+                        <img src="https://www.freecodecamp.org/news/content/images/2022/01/yt-logo.png">
+                </div>
+
+                <div class="search">
+                        <form action="">
+                                <input type="text" placeholder="Search" />
+                                <button><i class="material-icons">search</i></button>
+                        </form>
+                        <i class="material-icons mic m-2">mic</i>
+                </div>
+
+                <div class="icons right">
+                        <i class="material-icons me-3">videocam</i>
+                        <i class="material-icons me-3">apps</i>
+                        <i class="material-icons me-3">notifications</i>
+                        <i class="material-icons me-3 display-this">account_circle</i>
+                </div>
+
+        </header>
+
+        <main>
+                <div class="side-bar">
+                        <div class="nav">
+                                <a class="nav-link p-3 rounded active">
+                                        <i class="fas fa-house me-3 material-icons"></i> Home
+                                </a>
+                                <a class="nav-link p-3 rounded">
+                                        <i class="fab fa-tiktok material-icons me-3"></i> Shorts
+                                </a>
+                                <a class="nav-link p-3 rounded">
+                                        <i class="material-icons me-3">subscriptions</i>Subscriptions
+                                </a>
+                        </div>
+
+                        <hr class="ms-3">
+                        <h5 class="ms-3"> You <i class="fas fa-angle-right"></i></h5>
+
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="bi bi-person-square material-icons me-3"></i> Your Channel
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="material-icons me-3">history</i>History
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="material-icons me-3">play_arrow</i> Your Videos
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="material-icons me-3">watch_later</i>Watch Later
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="material-icons me-3">library_add_check</i>Library
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="material-icons me-3">thumb_up</i>Liked Videos
+                        </div>
+
+                        <hr class="ms-3">
+                        <h5 class="ms-4"> Explore </h5>
+
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="fas fa-fire me-3 material-icons material-icons"></i> Trending
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="fab fa-shopify me-3 material-icons material-icons"></i> Shoping
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="fas fa-music me-3 material-icons material-icons"></i> Music
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="bi bi-film me-3 material-icons material-icons"></i> Movies
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="bi bi-broadcast me-3 material-icons material-icons"></i> Live
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="bi bi-controller me-3 material-icons material-icons"></i> Gaming
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="bi bi-newspaper me-3 material-icons material-icons"></i> News
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="fas fa-trophy me-3 material-icons material-icons"></i> Sports
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="far fa-lightbulb me-3 material-icons material-icons"></i> Learning
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="bi bi-broadcast-pin me-3 material-icons material-icons"></i> Podcasts
+                        </div>
+
+                        <hr class="ms-3">
+                        <h5 class="ms-4"> More from Youtube </h5>
+
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="fab fa-youtube me-3 material-icons"></i> Yt Premium
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="bi bi-play-btn-fill me-3 material-icons"></i> Yt Studio
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="bi bi-music-note-list me-3 material-icons"></i> Yt Music
+                        </div>
+                        <div class="p-3 nav-link ms-4 rounded">
+                                <i class="fas fa-child me-3 material-icons"></i> Yt Kids
+                        </div>
+
+                        <hr class="ms-3">
+
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="fas fa-gear me-3 material-icons"></i> Setting
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="fas fa-flag me-3 material-icons"></i> Report history
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="far fa-circle-question me-3 material-icons"></i> Help
+                        </div>
+                        <div class="p-3 d-flex nav-link ms-4 rounded">
+                                <i class="far fa-message me-3 material-icons"></i> Send feedback
+                        </div>
+
+                        <hr class="ms-3">
+                        <div class="about">
+                                <p class="ms-4"> About Press Copyright Contact us Creators Advertise Developers <br>
+                                        <br>
+                                        Terms Privacy Policy & Safety How YouTube works Test new features. <br><br>
+                                        <span>© 2024 Google LLC</span>
+                                </p>
+                        </div>
+
+                </div>
+
+                <!-- Videos -->
+                <div class="content">
+
+                        <div class="d-flex btn_section align-items-center">
+                                <div>
+                                        <button class="button active ms-4 me-1">All</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">Music</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">Bollybood</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">Hollybood</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">News</button>
+                                </div>
+                                <div>
+                                        <button class="button ms-1 me-1">Live</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">Gaming</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">Science</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">AI</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">Playlist</button>
+                                </div>
+                                <div>
+                                        <button class="button me-1">More</button>
+                                </div>
+
+                        </div>
+
+                        <div class="videos mt-4 d-flex justify-content-around row">
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <!-- <video src="yt_1.jpg" alt="" /> -->
+                                                <video src="yt_video.mp4" controls autoplay></video>
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_1.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_2.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_2.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_3.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_3.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_4.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_6.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_5.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_5.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_6.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_6.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_7.png" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_7.png" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_8.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_8.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_9.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_3.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_4.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_6.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_5.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_5.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="video">
+                                        <div class="thumbnail">
+                                                <img src="yt_6.jpg" alt="" />
+                                        </div>
+
+                                        <div class="details">
+                                                <div class="author">
+                                                        <img src="yt_6.jpg" alt="" />
+                                                </div>
+                                                <div class="title">
+                                                        <h3>
+                                                                Introverts & Content Creation | Sumudu Siriwardana
+                                                        </h3>
+                                                        <a href="">
+                                                                Francesco Ciulla
+                                                        </a>
+                                                        <span> 2M Views • 3 Months Ago </span>
+                                                </div>
+                                        </div>
+                                </div>
+
+                        </div>
+                </div>
+
+        </main>
+        <!-- Main Body Ends -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+                rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/cb07d8fa89.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css" />
+        <title>Episode-35, Youtube Studio</title>
+</head>
+
+<body>
+        <div class="container">
+                <div class="column">
+                        <div class="box">
+                                <div class="boxTitle">Latest video performance</div>
+                                <div class="thumbnailContainer">
+                                        <img src="thumbnail.jpg" alt="my-thumbnail" class="thumbnail" />
+                                </div>
+                                <div class="performance fsize muteText">
+                                        First 8 hours 37 minutes compared to your typical performance:
+                                </div>
+                                <div class="statContainer fsize">
+                                        <div class="stat">
+                                                <div>Ranking by views</div>
+                                                <div>1 of 10 <i class="fas fa-angle-right fa-fsize"></i></div>
+                                        </div>
+                                        <div class="stat">
+                                                <div>Views</div>
+                                                <div>
+                                                        60 <i class="fas fa-arrow-circle-up fa-fsize highlight"></i>
+                                                </div>
+                                        </div>
+                                        <div class="stat">
+                                                <div>Impressions click-through rate</div>
+                                                <div>
+                                                        5.2% <i class="fas fa-arrow-circle-up fa-fsize highlight"></i>
+                                                </div>
+                                        </div>
+                                        <div class="stat">
+                                                <div>Average view duration</div>
+                                                <div>
+                                                        2:20 <i class="fas fa-arrow-circle-up fa-fsize highlight"></i>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="analytics">GO TO VIDEO ANALYTICS</div>
+                                <div class="analytics comment">SEE COMMENTS (1)</div>
+                        </div>
+                </div>
+                <div class="secondColumn">
+                        <div class="box">
+                                <div class="titleContainer boxTitle">
+                                        <div>News</div>
+                                        <div>
+                                                <i class="fas fa-chevron-left fa-fsize muteText"></i>
+                                                <i class="fas fa-chevron-right fa-fsize"></i>
+                                        </div>
+                                </div>
+                                <div>
+                                        <img src="youtubeThumbnail.png" alt="youtube-image" class="youtubeImg" />
+                                </div>
+                                <div class="creator">The new Creator Roundup is here</div>
+                                <div class="muteText fsize">
+                                        Learn more about our live streaming improvements, mid-roll ads
+                                        update, and more
+                                </div>
+                                <div class="analytics comment">CHECK IT OUT</div>
+                        </div> -->
+<!-- new code era -->
+<!-- <div class="box subColumn">
+                                <div class="boxTitle">What's news in Studio</div>
+
+                                <div class="contentContainer fsize">
+                                          <div>Confirm your content is available in HD</div>
+                                        <div class="divider"></div>
+                                     <div>Resume your interrupted uploads</div>
+                                        <div class="divider"></div>
+                                         <div>See more Studio updates</div>
+                                        <div class="divider"></div>
+                                </div>
+                        </div>
+                  </div>
+                <div class="column">
+                        <div class="box">
+                              <div class="boxTitle">Channel analytics</div>
+                                <div class="fsize">Current subscribers</div>
+                                <div class="subscriberCount">370</div>
+                                <div>
+                                        <span class="fsize highlight">+278</span>
+                                        <span class="fsize muteText">in last 28 days</span>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="summary">Summary</div>
+                                <div class="fsize muteText date">Last 28 days</div>
+                                <div class="summaryStat">
+                                        <div class="fsize muteText">Views</div>
+                                        <div class="fsize">5.6K <span class="highlight">602%</span></div>
+                                </div>
+
+                                <div class="summaryStat">
+                                        <div class="fsize muteText">Watch time (hours)</div>
+                                        <div class="fsize">342.6 <span class="highlight">648%</span></div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="summaryContainer">
+                                        <div class="summary">Top Videos</div>
+                                        <div class="fsize muteText">Last 48 hours · Views</div>
+                                </div>
+                                <div class="playlist fsize">
+                                        <div class="overflowEllipsis">
+                                                Myanmar Web Developer Intro - Motivation
+                                        </div>
+                                        <div>64</div>
+                                </div>
+                                <div class="playlist fsize">
+                                        <div class="overflowEllipsis">
+                                                Myanmar Web Developer - Episode 1 - What is a website?
+                                        </div>
+                                        <div>63</div>
+                                </div>
+                                <div class="playlist fsize">
+                                        <div class="overflowEllipsis">
+                                                Myanmar Web Developer - Episode 35 - Youtube Studio (Part 1)
+                                        </div>
+                                        <div>61</div>
+                                </div>
+                                <div class="analytics comment">GO TO CHANNEL ANALYTICS</div>
+                        </div>
+                </div>
+        </div> -->
+<!-- second row-container -->
+<!-- <div class="container">
+                <div class="column">
+                        <div class="box firstBox">
+                                <div class="boxTitle">Latest comments</div>
+                                <div class="subTitle fsize muteText">
+                                        Comments I haven't respond to
+                                </div>
+
+                                <div class="commentContainer">
+                                        <div class="profileContainer">
+                                                <img src="LiterallyMe.jpg" alt="ryan-gosling" class="profileImg" />
+                                                <div class="fsize muteText">Hein Thura Tun · 1 day ago</div>
+                                        </div>
+                                        <div>
+                                                <img src="thumbnail.jpg" alt="thumbnail" class="commentThumbnail" />
+                                                <div>
+                                                        <div class="reply fsize">Thank you, bro</div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="commentContainer">
+                                        <div class="profileContainer">
+                                                <img src="LiterallyMe.jpg" alt="ryan-gosling" class="profileImg" />
+                                                <div class="fsize muteText">Lashi Dela · 2 days ago</div>
+                                        </div>
+                                        <div>
+                                                <img src="thumbnail.jpg" alt="thumbnail" class="commentThumbnail" />
+                                                <div>
+                                                        <div class="reply fsize">Sr grai hrek ai</div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="commentContainer">
+                                        <div class="profileContainer">
+                                                <img src="LiterallyMe.jpg" alt="ryan-gosling" class="profileImg" />
+                                                <div class="fsize muteText">Ko Soe Aung · 2 days ago</div>
+                                        </div>
+                                        <div>
+                                                <img src="thumbnail.jpg" alt="thumbnail" class="commentThumbnail" />
+                                                <div>
+                                                        <div class="reply fsize">ကျေးဇူးတင်ပါတယ် ခင်ဗျား</div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="analytics comment">GO TO CHANNEL COMMENTS</div>
+                        </div>
+                </div>
+                <div class="column">
+                        <div class="box secondBox">
+                                <div class="titleContainer boxTitle">
+                                        <div>Creator Insider</div>
+                                        <div>
+                                                <i class="fas fa-chevron-left fa-fsize muteText"></i>
+                                                <i class="fas fa-chevron-right fa-fsize"></i>
+                                        </div>
+                                </div>
+                                <div>
+                                        <img src="creatorInsider.png" alt="youtube-image" class="youtubeImg" />
+                                </div>
+                                <div class="creatorDescription">
+                                        <div class="creatorTitle">Insider News Flash!</div>
+                                        <div class="description muteText fsize">
+                                                Hellooo insiders! This week we have a few updates about Studio
+                                                improvements, the new YT official blog, and Stories metrics!
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+                <div class="column">
+                        <div class="box thirdBox">
+                                <div class="boxTitle">Recent Subscribers</div>
+                                <div class="subTitle fsize muteText">Last 90 days</div>
+
+                                <div class="recentSubscriberContainer">
+                                        <div class="subscriberImgContainer">
+                                                <img src="LiterallyMe.jpg" alt="ryan-gosling"
+                                                        class="subscriberImg" />
+                                        </div>
+                                        <div class="subscribeInfo">
+                                                <div class="fsize">Sai Sai Kehsi Official</div>
+                                                <div class="fsize muteText">4.15K subscribers</div>
+                                        </div>
+                                </div>
+
+                                <div class="recentSubscriberContainer">
+                                        <div class="subscriberImgContainer">
+                                                <img src="LiterallyMe.jpg" alt="ryan-gosling"
+                                                        class="subscriberImg" />
+                                        </div>
+                                        <div class="subscribeInfo">
+                                                <div class="fsize">Stian Sando</div>
+                                                <div class="fsize muteText">64 subscribers</div>
+                                        </div>
+                                </div>
+
+                                <div class="recentSubscriberContainer">
+                                        <div class="subscriberImgContainer">
+                                                <img src="LiterallyMe.jpg" alt="ryan-gosling"
+                                                        class="subscriberImg" />
+                                        </div>
+                                        <div class="subscribeInfo">
+                                                <div class="fsize">major vincent</div>
+                                                <div class="fsize muteText">13 subscribers</div>
+                                        </div>
+                                </div>
+                                <div class="analytics comment">SEE ALL</div>
+                        </div>
+                </div>
+        </div>
+</body>
+
+</html> -->

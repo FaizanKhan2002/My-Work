@@ -1,0 +1,79 @@
+* {
+        margin: 0%;
+        padding: 0%;
+}
+
+header {
+        height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.508), rgba(0, 0, 0, 0.8)), url("netflix.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+}
+
+header img {
+        height: 100px;
+}
+
+.btn-outline-light:hover {
+        color: black;
+}
+
+.contain {
+        color: white;
+        line-height: 10px
+}
+
+.contain h1,
+.contain_2 h1,
+.Section h1 {
+        font-size: 40pt;
+        font-family: "Roboto", sans-serif;
+        font-weight: 600;
+}
+
+.contain h3 {
+        font-size: 20pt;
+        line-height: 70px;
+}
+
+.contain h3,
+.contain_2 h4,
+.contain p {
+        font-weight: 500;
+        font-family: "Noto Sans", sans-serif;
+}
+
+.form-control {
+        width: 60vh;
+}
+
+/* Section_1 */
+
+#Section {
+        background-color: black;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+}
+
+#Section_1 img {
+        width: 500px;
+}
+
+.contain_2 {
+        width: 100%;
+        color: white;
+}
+
+/* Questions */
+
+.Section{
+        background-color: black;
+        color: white;
+        height: 50vh;
+}
+
+.section_contain{
+        height: 13vh;
+        background-color: red;
+}

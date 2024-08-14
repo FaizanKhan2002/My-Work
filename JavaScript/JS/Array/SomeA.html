@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SomeArray</title>
+</head>
+
+<body>
+
+      <script>
+
+            console.log("This is Some Array")
+            console.log("price <= 100;")
+            const items = [
+                  { name: 'bike', price: '100' },
+                  { name: 'phone', price: '100' },
+                  { name: 'Car', price: '150' },
+                  { name: 'Dog', price: '50' },
+            ]
+
+            const freeitems = items.some((items) => {
+                  return items.price <= 100;
+            })
+
+            console.log(freeitems);
+
+      </script>
+
+      <script>
+
+            console.log("This is Every Array")
+            console.log("price <= 100;")
+            const item = [
+                  { name: 'bike', price: '100' },
+                  { name: 'phone', price: '100' },
+                  { name: 'Car', price: '150' },
+                  { name: 'Dog', price: '50' },
+            ]
+
+            const freesitem = item.every((item) => {
+                  return item.price <= 100;
+            })
+
+            console.log(freesitem); // False
+
+      </script>
+</body>
+
+</html>

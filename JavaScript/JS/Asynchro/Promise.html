@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promise Async</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+        new Promise((resolve, reject) => {
+                setTimeout(() => {
+                        console.log('this is me');
+                        resolve()
+                }, 5000);
+        }).then(() => {
+                console.log('this is you');
+        })
+
+</script>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Array</title>
+</head>
+
+<body>
+
+      <input type="text" name="" id="Arrays">
+      <button onclick="arr()">Click</button>
+      <div id="result"></div>
+
+      <script>
+
+            let ary = []
+            console.log(ary);
+
+            arr = () => {
+
+                  let ar = document.getElementById("Arrays").value;
+                  let results = document.getElementById("result");
+
+                  if (ar == "") {
+                        results.innerHTML = "efff"
+                        // results.innerHTML
+                  }
+
+                  else {
+                        ary.push(ar)
+                        console.log(ary);
+                  }
+            }
+
+
+            // let ary = []
+            // console.log(ary);
+
+            // arr = () => {
+            //       ar = document.getElementById("Arrays").value
+            //       ary.push(ar)
+            //       console.log(ary);
+            // }
+
+
+            // arr = () => {
+            //       let ab = []
+
+            //       ab.push(document.getElementById("Arrays").value)
+
+            //       let a = ([ab])
+            //       console.log(a);
+            // }
+
+
+            //1
+            // let a = [];
+            // console.log(a);
+            // a.push([1, 2, 3, 4, 5, 6, 7, 8, 9])
+            // console.log(a);
+            // console.log('<br>')
+
+            // //2
+            // let b = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            // console.log(b);
+            // b.pop()
+            // b.pop()
+            // console.log(b);
+            // console.log('<br>')
+
+            // //3
+            // let c = [3, 4, 5, 6, 7, 8, 9];
+            // console.log(c);
+            // c.unshift(1, 2)
+            // console.log(c);
+            // console.log('<br>')
+
+            // //4
+            // let d = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+            // console.log(d);
+            // d.shift()
+            // d.shift()
+            // d.shift()
+            // console.log(d);
+            // console.log('<br>')
+
+            // //5
+            // let e = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            // console.log(e)
+            // e.splice(4, 2)
+            // console.log(e)
+            // console.log('<br>')
+
+            // //6
+            // let f = [1, 2, 3, 4, 5, 6, 7]
+            // console.log(f)
+            // console.log(f.length)
+            // console.log('<br>')
+
+            // //7
+            // let g = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            // console.log(g)
+            // console.log(g.indexOf(7))
+            // console.log('<br>')
+
+            // //8
+            // let h = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            // console.log(h)
+            // console.log([1, 2, 3, 4, 5, 6, 7, 8, 9].includes(7));
+
+
+      </script>
+
+</body>
+
+</html>

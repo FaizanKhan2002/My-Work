@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Deposite Page</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+
+    <h1 class="display-4 text-center mt-5">ATM Machine</h1>
+
+    <center>
+
+        <div id="display1" style="display:block;">
+            <label class="display-6 text-center mt-5">Please Select Your Fastcash Option</label><br><br>
+            <select id="myselect1">
+                <option value="10000">10000</option>
+                <option value="20000">20000</option>
+                < option value="50000">50000</option>
+            </select> <br><br>
+            <button class="btn btn-outline-light" type="submit" value="submit" onclick="getamount()">Submit</button>
+        </div>
+
+        <a class="btn btn-outline-light mt-4" href="ATM-2 .html">Back</a><br>
+
+    </center>
+
+    <br><br>
+    <script>
+
+        function myDIV(val) {
+            m = 10000;
+            if (val == 1) {
+                document.getElementById('demo1').innerHTML = "<br><br> Your amount is: " + m;
+                document.getElementById('display1').style.display = 'none';
+            }
+
+            if (val == 2) {
+                document.getElementById('display1').style.display = 'none';
+            }
+
+            if (val == 3) {
+                document.getElementById('display1').style.display = 'block';
+            }
+        }
+
+        function getamount() {
+
+            var x = document.getElementById("myselect1").value
+            m = 10000;
+
+            if (x <= m && x % 100 == 0)
+                alert("Please take your amount : " + x)
+
+            else
+                alert("Invalid cash")
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

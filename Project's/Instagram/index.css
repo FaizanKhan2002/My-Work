@@ -1,0 +1,58 @@
+.heading {
+        height: 400px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 10px;
+}
+
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+
+.heading h1 {
+        font-family: cursive;
+        font-weight: 900;
+}
+
+.form-floating input,
+button {
+        width: 90%;
+}
+
+.line {
+        height: 1px;
+        width: 80px;
+        background-color: black;
+        margin: 10px;
+}
+
+.Login h2,
+a {
+        font-size: 10pt;
+        color: rgb(40, 40, 199);
+        text-decoration: none;
+}
+
+.Login a:hover {
+        text-decoration: underline;
+}
+
+.last {
+        height: 50px;
+        width: 300px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        border-radius: 10px;
+}
+
+p a {
+        font-weight: 600;
+}
+
+img {
+        height: 70px;
+        width: 120px;
+
+}

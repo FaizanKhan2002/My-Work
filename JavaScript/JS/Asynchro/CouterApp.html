@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+        <h1>1</h1>
+        <button onclick="CouterApp()">+</button>
+        <button onclick="CouterApp1()">-</button>
+</body>
+
+<script>
+
+        let couter = 0;
+
+        function CouterApp() {
+                couter = couter + 1
+                let h1 = document.querySelector("h1").innerHTML = couter;
+                console.log(h1)
+
+                // if (couter == 5) {
+                //         couter = 0
+                // }
+        }
+
+        function CouterApp1() {
+                couter = couter - 1
+                let h1 = document.querySelector("h1").innerHTML = couter;
+                console.log(h1)
+        }
+
+</script>
+
+</html>

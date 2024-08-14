@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+
+        <input type="number" name="" id="wek">
+        <button onclick="weeks()">Click</button>
+
+        <script>
+
+                function weeks() {
+                        var expr = document.getElementById('wek').value;
+                        switch (expr) {
+                                case '1':
+                                        console.log('This is Monday');
+                                        break;
+                                case '2':
+                                        console.log('This is Tuesday');
+                                        break;
+                                case '3':
+                                        console.log('This is Wednesday');
+                                        break;
+                                case '4':
+                                        console.log('This is Thursday');
+                                        break;
+                                case '5':
+                                        console.log('This is Friday');
+                                        break;
+                                case '6':
+                                        console.log('This is Saturday');
+                                        break;
+                                case '7':
+                                        console.log('This is Sunday');
+                                        break;
+                                default:
+                                        console.log(`Sorry, I don't know ${expr}.`);
+                        }
+                }
+
+                // const expr = prompt("Enet");
+                // switch (expr) {
+                //         case 'Orange':
+                //                 console.log('This is Orange');
+                //                 break;
+                //         case 'Mango':
+                //                 console.log('This is Mango');
+                //                 break;
+                //         case 'Papaya':
+                //                 console.log('This is Papaya');
+                //                 // Expected output: "Mangoes and papayas are $2.79 a pound."
+                //                 break;
+                //         default:
+                //                 console.log(`Sorry, I don't know ${expr}.`);
+                // }
+
+
+        </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                * {
+                        margin: 0%;
+                }
+
+                nav {
+                        background-color: black;
+                        color: white;
+                        height: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                }
+
+                section {
+                        display: flex;
+                }
+
+                .div_1 {
+                        background-color: whitesmoke;
+                        height: 500px;
+                        width: 30%;
+
+                }
+
+                .div_1 div {
+                        background-color: white;
+                        height: 40px;
+                        border: 2px solid black;
+                        margin: 10px;
+                        padding: 10px;
+                }
+
+                .div_2 {
+                        background-color: whitesmoke;
+                        height: 500px;
+                        width: 70%;
+                        border: 2px solid black;
+                }
+
+                #div1,
+                #div2,
+                #div3 {
+                        height: 40px;
+                        border: 2px solid black;
+                        margin: 10px;
+                        padding: 10px;
+                }
+        </style>
+</head>
+
+<body>
+        <nav>
+                Whataap
+        </nav>
+
+        <section>
+
+                <div class="div_1">
+
+                        <div><button onclick="myFunction1()">Click 1</button></div>
+                        <div><button onclick="myFunction2()">Click 2</button></div>
+                        <div><button onclick="myFunction3()">Click 3</button></div>
+
+                </div>
+
+                <div class="div_2">
+                        <div id="div1">hhh</div>
+                        <div id="div2"></div>
+                        <div id="div3"></div>
+                </div>
+
+        </section>
+
+        <script>
+
+                document.addEventListener("mouseover");
+
+                function myFunction1() {
+                        document.getElementById('div1').style.background = 'red';
+                }
+
+                function myFunction2() {
+                        document.getElementById('div2').style.background = 'black';
+                }
+
+                function myFunction3() {
+                        document.getElementById('div3').style.background = 'pink';
+                }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download Multiple Images</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .downloadable-image {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="max-w-6xl w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 p-6">
+    <!-- Dynamic card generation will be done by JavaScript -->
+  </div>
+
+  <script>
+    // Array of images with corresponding filenames
+    const images = [
+      { id: "image1", url: "1.png", filename: "image1.jpg" },
+      { id: "image2", url: "2.png", filename: "image2.jpg" },
+      { id: "image3", url: "3.png", filename: "image3.jpg" },
+      { id: "image4", url: "4.png", filename: "image4.jpg" },
+      { id: "image5", url: "5.png", filename: "image5.jpg" },
+      { id: "image6", url: "6.png", filename: "image6.jpg" },
+      { id: "image7", url: "7.png", filename: "image7.jpg" },
+      { id: "image8", url: "8.png", filename: "image8.jpg" },
+      { id: "image9", url: "9.png", filename: "image9.jpg" },
+      { id: "image10", url: "10.png", filename: "image10.jpg" },
+      { id: "image11", url: "11.png", filename: "image11.jpg" },
+      { id: "image12", url: "12.png", filename: "image12.jpg" },
+      { id: "image13", url: "13.png", filename: "image13.jpg" },
+      { id: "image14", url: "14.png", filename: "image14.jpg" },
+      { id: "image15", url: "15.png", filename: "image15.jpg" },
+      { id: "image16", url: "16.png", filename: "image16.jpg" },
+      { id: "image17", url: "17.png", filename: "image17.jpg" },
+      { id: "image18", url: "18.png", filename: "image18.jpg" },
+      { id: "image19", url: "19.png", filename: "image19.jpg" },
+      { id: "image20", url: "20.png", filename: "image20.jpg" },
+      { id: "image21", url: "21.png", filename: "image21.jpg" },
+      { id: "image22", url: "22.png", filename: "image22.jpg" },
+      { id: "image23", url: "23.png", filename: "image23.jpg" },
+      { id: "image24", url: "24.png", filename: "image24.jpg" },
+      { id: "image25", url: "25.png", filename: "image25.jpg" },
+      { id: "image26", url: "26.png", filename: "image26.jpg" },
+      { id: "image27", url: "27.png", filename: "image27.jpg" },
+      { id: "image28", url: "28.png", filename: "image28.jpg" },
+      { id: "image29", url: "29.png", filename: "image29.jpg" },
+      { id: "image30", url: "30.png", filename: "image30.jpg" },
+    ];
+
+    // Generate image cards dynamically
+    const container = document.querySelector('div.max-w-6xl');
+    images.forEach(image => {
+      const card = document.createElement('div');
+      card.className = 'bg-white border border-gray-200 rounded-lg shadow-md';
+      card.innerHTML = `
+        <img class="rounded-t-lg w-full h-48 object-cover" src="${image.url}" alt="${image.filename}" />
+        <div class="p-5">
+          <button
+            type="button"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+            data-url="${image.url}" data-filename="${image.filename}">
+            Download
+          </button>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+
+    // Add click event listener to buttons for downloading images
+    container.addEventListener('click', (event) => {
+      if (event.target.tagName === 'BUTTON') {
+        const url = event.target.getAttribute('data-url');
+        const filename = event.target.getAttribute('data-filename');
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    });
+  </script>
+</body>
+</html>

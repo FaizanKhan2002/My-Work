@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body class="bg-dark text-light">
+
+
+
+        <script>
+
+                let rand = Math.random();
+                let first, second, third;
+
+                // First
+                if (rand < 0.33) {
+                        first = 'Crazy'
+                }
+
+                else if (rand < 0.66 && rand >= 0.33) {
+                        first = 'Rizz'
+                }
+
+                else {
+                        first = 'Fizz'
+                }
+
+                // second
+                rand = Math.random();
+                if (rand < 0.33) {
+                        second = 'Amazing'
+                }
+
+                else if (rand < 0.66 && rand >= 0.33) {
+                        second = 'Fire'
+                }
+
+                else {
+                        second = 'Food'
+                }
+
+                // third
+                rand = Math.random();
+                if (rand < 0.33) {
+                        third = 'Bro'
+                }
+
+                else if (rand < 0.66 && rand >= 0.33) {
+                        third = 'Insta'
+                }
+
+                else {
+                        third = 'YT'
+                }
+
+                console.log(`${first} ${second} ${third}`)
+
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

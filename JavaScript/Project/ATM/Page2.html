@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Withdraw Page</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+
+    <h1 class="display-4 text-center mt-5">ATM Machine</h1>
+
+    <center>
+
+        <div id="display" style="display:block;">
+            <label class="display-6 text-center mt-5">Please Enter Your Withdraw Amount</label> <br><br>
+            <input type="text" id="amount1" value="" /> <br><br>
+            <button class="btn btn-outline-light" type="submit" value="submit" onclick="getamount()">Submit</button>
+        </div>
+
+        <div>
+            <a class="btn btn-outline-light mt-4" href="ATM-2 .html">Back</a><br>
+        </div>
+    </center>
+
+    <script>
+
+        function getamount() {
+
+            m = 10000;
+
+            var a = document.getElementById('amount1').value;
+
+            if (a <= m && a % 100 == 0)
+                alert("Your withdraw amount : " + a)
+
+            else
+                alert("Invalid cash")
+        }
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page - 2</title>
+</head>
+
+<body>
+
+    <div id="myDIV">
+        This is me
+
+        <br> <button onclick="myfunction()">Click</button>
+    </div>
+
+    <div id="yDIV">this is you</div>
+    <script>
+        function myfunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+            }
+            else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html> -->

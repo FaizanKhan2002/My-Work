@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<style>
+        #modelbox {
+
+                height: 200px;
+                width: 700px;
+                background: rgb(255, 255, 255);
+                /* display: none; */
+                border-radius: 10px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+                border: 1px ridge yellowgreen;
+                display: none;
+
+
+        }
+
+        #clildDiv {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 30px;
+
+        }
+
+        #mainbox {
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+
+
+
+        }
+
+
+        #grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto auto auto;
+
+                padding: 10px;
+                gap: 50px;
+        }
+
+        #grid-item1 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+
+        }
+
+        #grid-item2 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+        }
+
+        #grid-item3 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+        }
+
+        #grid-item4 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+        }
+
+        #grid-item5 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+        }
+
+        #grid-item6 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+        }
+
+        #grid-item7 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+        }
+
+        #grid-item8 {
+
+                height: 140px;
+                width: 100px;
+                background-color: red;
+                display: none;
+
+        }
+
+
+
+        .btnGroup {
+
+                display: flex;
+                justify-content: space-evenly;
+                padding-top: 20px;
+
+        }
+</style>
+
+<body>
+        <div class="grid-container">
+                <div id="grid-item1"><i style="cursor: pointer;" onclick="CBox1()" class="bi bi-x-lg"></i></div>
+                <div id="grid-item3"><i style="cursor: pointer;" onclick="Cbox3()" class="bi bi-x-lg"></i></div>
+                <div id="grid-item4"><i style="cursor: pointer;" onclick="Cbox4()" class="bi bi-x-lg"></i></div>
+                <div id="grid-item5"><i style="cursor: pointer;" onclick="Cbox5()" class="bi bi-x-lg"></i></div>
+                <div id="grid-item6"><i style="cursor: pointer;" onclick="Cbox6()" class="bi bi-x-lg"></i></div>
+                <div id="grid-item7"><i style="cursor: pointer;" onclick="Cbox7()" class="bi bi-x-lg"></i></div>
+                <div id="grid-item8"><i style="cursor: pointer;" onclick="Cbox8()" class="bi bi-x-lg"></i></div>
+
+        </div>
+
+
+
+        <div id="mainbox">
+
+
+                <div id="modelbox">
+                        <div style="display: flex ; justify-content: end;"> <i style="cursor: pointer;"
+                                        onclick="Close()" class="bi bi-x-lg"></i>
+                        </div>
+
+                        <div id="clildDiv">
+                                <h1 style="color: yellowgreen">Hello My Name Is Yogesh Yadav</h1>
+
+
+                        </div>
+                        <div class="btnGroup">
+                                <i onclick="Box1()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                                <i onclick="Open()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                                <i onclick="Open()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                                <i onclick="Open()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                                <i onclick="Open()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                                <i onclick="Open()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                                <i onclick="Open()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                                <i onclick="Open()" class="bi bi-door-open" style="cursor: pointer;"></i>
+                        </div>
+
+                </div>
+        </div>
+
+
+
+
+
+
+        <i onclick="Open()" class="bi bi-door-open " style="cursor: pointer;">Open</i>
+
+
+
+
+
+        <script>
+                function Open() {
+
+                        let OpenBox = document.getElementById("modelbox");
+
+                        OpenBox.style.display = "block"
+
+
+                }
+
+
+                let Close = () => {
+
+                        let CloseBox = document.querySelector("#modelbox");
+                        CloseBox.style.display = "none"
+
+                }
+
+                let = Box1 = () => {
+
+                        let box1 = document.getElementById("grid-item1");
+                        box1.style.display = "block"
+                        box1.style.transform = "rotate(7deg)";
+                        box1.style.transition = "all 5s"
+
+
+                }
+
+
+                let = CBox1 = () => {
+
+                        document.getElementById("grid-item1").style.display = "none"
+
+
+                }
+
+
+                let a = 4;
+
+                function factorial(num) {
+                        let arr = Array.from(Array(num + 1).keys());
+                        let c = arr.slice(1,).reduce((a, b) => (a * b));
+                        return c
+                }
+
+
+                function fact(number) {
+                        let fact = 4;
+                        for (let index = 1; index <= number; index++) {
+                                fact = fact * index
+                        }
+                        return fact
+                }
+
+                console.log(factorial(a))
+                console.log(fact(a))
+        </script>
+</body>
+
+</html>

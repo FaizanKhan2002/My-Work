@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Front Page</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body class="bg-dark text-light">
+
+    <h1 class="display-4 text-center mt-5">ATM Machine</h1>
+    <h1 class="text-center mt-5">Welcome</h1>
+
+    <!-- PIN -->
+    <div class="row mt-5 mb-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold">Enter your Pin no.</label>
+            <input type="text" class="form-control" id="Pin" placeholder="* * * *">
+            <a href="ATM-2 .html"><button type="button" class="btn btn-outline-light mt-3" onclick="myfunction()"
+                    value="go">Ok</button></a>
+            <p id="demo" class="mt-5"> </p>
+        </div>
+    </div>
+
+    <!-- Chart -->
+    <center>
+        <div id="options" class="" style="display:none; justify-content: center;align-items: center;">
+            <a class="btn btn-outline-light mt-2" href="Page1.html">Balance</a> <br>
+            <a class="btn btn-outline-light mt-2" href="Page2.html">Withdraw</a> <br>
+            <a class="btn btn-outline-light mt-2" href="Page3.html">Deposite</a><br>
+            <a class="btn btn-outline-light mt-2" href="Page4.html">Transfer Money</a><br>
+            <a class="btn btn-outline-light mt-2" href="ATM.html">Exit</a><br>
+        </div>
+        <p id="demo1" ,></p>
+    </center>
+
+    <div id="display" style="display:none;">
+        <label>Please Enter Your Withdraw Amount</label>
+        <input type="text" id="amount1" value="" />
+        <input type="submit" value="submit" onclick="getamount()" />
+    </div>
+
+    <div id="display1" style="display:none;">
+        <label>Please Select Your Fastcash Option</label>
+        <select id="myselect1">
+            <option value="10000">10000</option>
+            <option value="20000">20000</option>
+            <option value="50000">50000</option>
+        </select>
+        <input type="submit" name="submit2" value="submit" onclick="getamount1()">
+    </div>
+
+    <div id="display2" style="display:none;">
+        <label>Transfer Money</label>
+        <input type="submit2" name="submit3" value="submit" onclick="getamount2()">
+    </div>
+
+    <br><br>
+
+    <script>
+
+        function myfunction() {
+
+            var p = document.getElementById('Pin').value;
+            var a = 1234;
+
+            if (p == a) {
+                document.getElementById("demo").innerHTML = "Please Choose transcation";
+                document.getElementById('options').style.display = 'block';
+            }
+            else {
+                document.getElementById("demo").innerHTML = "Invalid pin";
+            }
+        }
+
+        function myDIV(val) {
+            m = 10000;
+            if (val == 1) {
+                document.getElementById('demo1').innerHTML = "<br><br> Your amount is: " + m;
+                document.getElementById('display').style.display = 'none';
+                document.getElementById('display1').style.display = 'none';
+            }
+
+            if (val == 2) {
+                document.getElementById('display').style.display = 'block';
+                document.getElementById('display1').style.display = 'none';
+            }
+
+            if (val == 3) {
+                document.getElementById('display1').style.display = 'block';
+                document.getElementById('display').style.display = 'none';
+            }
+        }
+
+        function getamount() {
+
+            m = 10000;
+
+            var a = document.getElementById('amount1').value;
+
+            if (a <= m && a % 100 == 0)
+                alert("Your withdraw amount : " + a)
+
+            else
+                alert("Invalid cash")
+        }
+
+        function getamount1() {
+
+            var x = document.getElementById("myselect1").value
+            m = 10000;
+
+            if (x <= m && x % 100 == 0)
+                alert("Please take your amount : " + x)
+
+            else
+                alert("Invalid cash")
+        }
+
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
